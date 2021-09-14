@@ -49,7 +49,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <!-- Fontawesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
@@ -57,7 +57,7 @@
 
   <!-- Custom JS -->
   <script src="./assets/js/main.js"></script>
-  <script src="./assets/js/app.js"></script>
+  <!-- <script src="./assets/js/app.js"></script> -->
 
 
 </head>
@@ -90,15 +90,29 @@
             <a class="nav-link active" aria-current="page" href="https://bndktfschr.github.io/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="/about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="https://blog.bnf.one/">Blog</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fab fa-github"></i>
               Projects
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="https://github.com/bndktfschr/">My <i class="fab fa-github"></i> account</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://github.com/bndktfschr/">Website</a></li>
+              <li><a class="dropdown-item" href="https://github.com/bndktfschr/">Minecraft Server Api</a></li>
+              <li><a class="dropdown-item" href="https://github.com/bndktfschr/">Minecraft Server Plugin</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-cloud-download-alt"></i>
+              Downloads
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="https://github.com/bndktfschr/">My <i class="fab fa-github"></i> account</a></li>
@@ -116,7 +130,15 @@
 
   <!-- Welcome Hero -->
   <div class="container min-vh-100 position-relative">
-    <h1 class="position-absolute top-50 start-50 translate-middle">Comming soon...</h1>
+    <div class="hero position-absolute top-50 start-50 translate-middle text-center">
+      <h1 class="m-2 p-2">Comming soon...</h1>
+      <a href="https://github.com/bndktfschr/">
+        <button type="button" class="btn btn-light">
+          <i class="fab fa-github"></i>
+          Visit my GitHub 
+        </button>
+      </a>
+    </div>
   </div>
   <!-- END Welcome Hero -->
 
