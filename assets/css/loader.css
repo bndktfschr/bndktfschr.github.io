@@ -1,43 +1,71 @@
 /* Stylesheet for bndktfschr.github.io by Benedikt Fischer */
 
-.loader-wrapper {
-    z-index: 10000;
-width: 100%;
-height: 100%;
-position: absolute;
-top: 0;
-left: 0;
-background-color: #000;
-display:flex;
-justify-content: center;
-align-items: center;
+.spinner-bg{
+    /* position: absolute; */
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000000;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    /* overflow: hidden; */
 }
-.loader {
-display: inline-block;
-width: 30px;
-height: 30px;
-position: relative;
-border: 4px solid #Fff;
-animation: loader 2s infinite ease;
+.spinner{
+    width: 80px;
+    height: 80px;
+    /* overflow: hidden; */
+    border: 2px solid #494949;
+    border-top:3px solid #eee;
+    border-radius: 100%;
+    
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+    
+    animation: spin 1s infinite linear;
 }
-.loader-inner {
-vertical-align: top;
-display: inline-block;
-width: 100%;
-background-color: #fff;
-animation: loader-inner 2s infinite ease-in;
+.spinner-inner{
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: none;
+  border-radius: 50px;
 }
-@keyframes loader {
-0% { transform: rotate(0deg);}
-25% { transform: rotate(180deg);}
-50% { transform: rotate(180deg);}
-75% { transform: rotate(360deg);}
-100% { transform: rotate(360deg);}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
 }
-@keyframes loader-inner {
-0% { height: 0%;}
-25% { height: 0%;}
-50% { height: 100%;}
-75% { height: 100%;}
-100% { height: 0%;}
+
+
+
+
+/* LATER IN MAIN.SASS */
+.bg-linear-gardigend-custom-img-footer{
+    background: rgb(0,82,255);
+    background: linear-gradient(45deg, rgba(0,82,255,1) 0%, rgba(0,255,213,1) 100%);
+    border-radius: 100%;
+}
+h1{
+    /* background: rgb(0,82,255); */
+background: linear-gradient(45deg, rgba(0,82,255,1) 0%, rgba(0,255,213,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+header{
+    z-index: 1;
 }

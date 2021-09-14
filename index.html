@@ -53,7 +53,7 @@
 
   <!-- Custom CSS -->
   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
-  <!-- <link rel="stylesheet" href="./assets/css/loader.css"> -->
+  <link rel="stylesheet" href="./assets/css/loader.css">
 
   <!-- Custom JS -->
   <script src="./assets/js/main.js"></script>
@@ -62,22 +62,20 @@
 
 </head>
 
-<body>
+<body class="bg-dark text-light">
 
   <!-- HTML for bndktfschr.github.io by Benedikt Fischer -->
 
   <!-- LOADER -->
-  <div class="loader-wrapper">
-    <!-- <span class="loader"> -->
-      <!-- <span class="loader-inner"></span> -->
-    <!-- </span> -->
-    <img src="./assets/img/logo/BF Logo Circle - BlackandWhite.svg" alt="BF" height="100px" width="100px" class="position-absolute top-50 start-50 translate-middle">
+  <div class="spinner-bg">
+    <div class="spinner"></div> 
+    <img src="./assets/img/logo/BF Logo Letter White.svg" alt="BF - Benedikt Fischer" class="spinner-inner" height="50px" width="50px">  
   </div>
   <!-- END LOADER -->
 
 
   <!-- HEADER -->
-  <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="https://bndktfschr.github.io/">
         <img src="./assets/img/logo/BF Logo Circle - BlackandWhite.svg" alt="BF - Benedikt Fischer" height="50px" width="50px">
@@ -116,9 +114,88 @@
   </header>
   <!-- END HEADER -->
 
-  <div class="container">
-    <h1>Hallo Welt</h1>
+  <!-- Welcome Hero -->
+  <div class="container min-vh-100 position-relative">
+    <h1 class="position-absolute top-50 start-50 translate-middle">Comming soon...</h1>
   </div>
+  <!-- END Welcome Hero -->
+
+  <!-- FOOTER -->
+  <footer class="bg-navy text-center text-lg-start text-light">
+    <div class="container p-4">
+      <div class="row my-4">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0 textlightk link-light">
+          <div class="rounded-circle bg-white d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+            <img src="./assets/img/logo/BF Logo Circle - BlackandWhite.svg" height="auto" alt="BF - Benedikt Fischer" class="bg-linear-gardigend-custom-img-footer"/>
+          </div>
+          <ul class="list-unstyled d-flex flex-row justify-content-center">
+            <li>
+              <a class="text-light px-2" href="https://github.bnf.one/">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-light px-2" href="https://discord.bnf.one/">
+                <i class="fab fa-discord"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-light px-2" href="https://paypal.bnf.one/">
+                <i class="fab fa-paypal"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">On this Page</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="https://minecraft.bnf.one/" class="text-light text-decoration-none">Home</a>
+            </li>
+            <li class="mb-2">
+              <a href="#onlineplayerlist" class="text-light text-decoration-none">Online Players</a>
+            </li>
+            <li class="mb-2">
+              <a href="#join" class="text-light text-decoration-none">Join now!</a>
+            </li>
+            <li class="mb-2">
+              <a href="#plugin" class="text-light text-decoration-none">Plugin</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="/downloads/" class="text-light text-decoration-none">Downloads</a>
+            </li>
+            <li class="mb-2">
+              <a href="/impressum.php" class="text-light text-decoration-none">Impressum</a>
+            </li>
+            <li class="mb-2">
+              <a href="/datenschutz.php" class="text-light text-decoration-none">Datenschutzerklärung</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Contact</h5>
+      
+          <ul class="list-unstyled">
+            <li>
+              <p><i class="fas fa-map-marker-alt pe-2"></i>Germany</p>
+            </li>
+            <li>
+              <p><a href="mailto:benedikt.fischer@hackermail.com" class="text-light text-decoration-none"><i class="fas fa-envelope pe-2 mb-0"></i> benedikt.fischer@hackermail.com</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3" style="background-color: #000">
+      <a class="text-white text-decoration-none" href="https://bnf.one/">&copy; 2021 by Benedikt Fischer</a>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
 
 </body>
 

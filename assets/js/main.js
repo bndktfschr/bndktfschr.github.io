@@ -12,5 +12,5 @@ if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
 
 // PreLoader fadeout by 100% loaded
 $(window).on("load",function(){
-    $(".loader-wrapper").delay(10).fadeOut("slow");
+    $(".spinner-bg").delay(900).fadeOut("slow");
 });
