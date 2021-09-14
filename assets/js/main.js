@@ -1,5 +1,7 @@
-// No Internet Explorer Support!
+// JavaScript Code for bndktfschr.github.io by Benedikt Fischer
 
+
+// No Internet Explorer Support!
 if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
     window.location = 'microsoft-edge:' + window.location;
     setTimeout(function() {
